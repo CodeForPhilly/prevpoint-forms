@@ -1,6 +1,6 @@
 # prevpoint-forms
 
-This project is to design a piece of software to record information from scanned forms for Prevention Point. This project utilizes openCV and the Microsoft Azure API. Please contact the project lead on slack on how to use access the API key. 
+This project is to design a piece of software to record information from scanned forms for Prevention Point. This project utilizes openCV and the Microsoft Azure API. Please contact the project lead on slack on how to get access the API key. 
 
 
 ## Main Project Parts
