@@ -2,7 +2,7 @@
 Date_Month,Month the training was performed.,
 Date_Day,Day of the month the training was performed.,
 Date_Year,Year the training was performed.,
-Name,Name of participant,
+Name,Name of participant (free text),
 IsStaff,"""Check if you are a staff member""","""0"" if unchecked, ""1"" if checked"
 UniqueID,Unique ID of the participant,
 SEP,Last 4 digits of the participant's social security,

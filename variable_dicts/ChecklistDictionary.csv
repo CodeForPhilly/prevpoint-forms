@@ -1,0 +1,22 @@
+﻿Var Name,Description,Options
+Name,Participant's name (free text),
+DOB_Month,Month the participant was born.,
+DOB_Day,Day of the month the pariticpant was born.,
+DOB_Year,Year the participant was born.,
+UniqueID,Unique ID of the participant ,
+Risk,"Participant Initialed in the ""Overdose Risk Factors"" box","""0"" if there are no marks in the box, ""1"" if marks are present"
+Symptoms,"Participant Initialed in the ""Overdose Symptoms Recognition"" box","""0"" if there are no marks in the box, ""1"" if marks are present"
+Safety,"Participant Initialed in the ""Rescue Safety"" box","""0"" if there are no marks in the box, ""1"" if marks are present"
+Breathing,"Participant Initialed in the ""Rescue Breathing"" box","""0"" if there are no marks in the box, ""1"" if marks are present"
+Naloxone,"Participant Initialed in the ""Naloxone"" box","""0"" if there are no marks in the box, ""1"" if marks are present"
+Call911,"Participant Initialed in the ""911 Calls & Working with EMTS"" box","""0"" if there are no marks in the box, ""1"" if marks are present"
+Signature,The participant signed the form giving Prevention Point Philadelphia permission to verify that the participant has completed Opiate Overdose Prevention Training,"""0"" if signature not present, ""1"" if signature is present"
+Date_Month,Month the form was signed,
+Date_Day,Day of the month the form was signed,
+Date_Year,Year the form was signed,
+Staff,Staff memember who lead the training (free text),
+UnitsShown,(free text),
+LotNum,(free text),
+ExpDate,(free text),
+Trained,"""What program did the person who trained you come from?""","""SHP"", ""SEP"", ""CM"", ""WN"", ""WCC"", ""Drop In"", ""Testing"", ""External (provider/parent/community)"""
+Medication,"""What program's medication was used for training if applicable?""","""SHP"", ""SEP"", ""CM"", ""WN"", ""WCC"", ""Drop In"", ""Testing"", ""External (provider/parent/community)"""
