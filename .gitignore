@@ -1,5 +1,3 @@
-# untracked files
-  GoogleDrive/  
-  notebooks/keys.py  
-  src/ppoint/keys.py  
-  
+Googledrive/*
+src/ppoint/keys.py
+notebooks/keys.py
