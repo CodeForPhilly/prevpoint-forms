@@ -9,6 +9,137 @@ snapshots = Snapshot()
 
 snapshots['SchemaTestCase::test_form_to_schema 1'] = {
     'properties': {
+        'Breathing': {
+            'description': 'Participant Initialed in the "Rescue Breathing" box',
+            'name': 'Breathing',
+            'type': 'boolean'
+        },
+        'Call911': {
+            'description': 'Participant Initialed in the "911 Calls & Working with EMTS" box',
+            'name': 'Call911',
+            'type': 'boolean'
+        },
+        'DOB_Day': {
+            'description': 'Day of the month the pariticpant was born.',
+            'name': 'DOB_Day',
+            'type': 'string'
+        },
+        'DOB_Month': {
+            'description': 'Month the participant was born.',
+            'name': 'DOB_Month',
+            'type': 'string'
+        },
+        'DOB_Year': {
+            'description': 'Year the participant was born.',
+            'name': 'DOB_Year',
+            'type': 'string'
+        },
+        'Date_Day': {
+            'description': 'Day of the month the form was signed',
+            'name': 'Date_Day',
+            'type': 'string'
+        },
+        'Date_Month': {
+            'description': 'Month the form was signed',
+            'name': 'Date_Month',
+            'type': 'string'
+        },
+        'Date_Year': {
+            'description': 'Year the form was signed',
+            'name': 'Date_Year',
+            'type': 'string'
+        },
+        'ExpDate': {
+            'description': '(free text)',
+            'name': 'ExpDate',
+            'type': 'string'
+        },
+        'LotNum': {
+            'description': '(free text)',
+            'name': 'LotNum',
+            'type': 'string'
+        },
+        'Medication': {
+            'choices': [
+                'SHP',
+                'SEP',
+                'CM',
+                'WN',
+                'WCC',
+                'Drop In',
+                'Testing',
+                'External (provider/parent/community)'
+            ],
+            'description': '"What program\'s medication was used for training if applicable?"',
+            'name': 'Medication',
+            'type': 'string'
+        },
+        'Naloxone': {
+            'description': 'Participant Initialed in the "Naloxone" box',
+            'name': 'Naloxone',
+            'type': 'boolean'
+        },
+        'Name': {
+            'description': "Participant's name (free text)",
+            'name': 'Name',
+            'type': 'string'
+        },
+        'Risk': {
+            'description': 'Participant Initialed in the "Overdose Risk Factors" box',
+            'name': 'Risk',
+            'type': 'boolean'
+        },
+        'Safety': {
+            'description': 'Participant Initialed in the "Rescue Safety" box',
+            'name': 'Safety',
+            'type': 'boolean'
+        },
+        'Signature': {
+            'description': 'The participant signed the form giving Prevention Point Philadelphia permission to verify that the participant has completed Opiate Overdose Prevention Training',
+            'name': 'Signature',
+            'type': 'boolean'
+        },
+        'Staff': {
+            'description': 'Staff memember who lead the training (free text)',
+            'name': 'Staff',
+            'type': 'string'
+        },
+        'Symptoms': {
+            'description': 'Participant Initialed in the "Overdose Symptoms Recognition" box',
+            'name': 'Symptoms',
+            'type': 'boolean'
+        },
+        'Trained': {
+            'choices': [
+                'SHP',
+                'SEP',
+                'CM',
+                'WN',
+                'WCC',
+                'Drop In',
+                'Testing',
+                'External (provider/parent/community)'
+            ],
+            'description': '"What program did the person who trained you come from?"',
+            'name': 'Trained',
+            'type': 'string'
+        },
+        'UniqueID': {
+            'description': 'Unique ID of the participant ',
+            'name': 'UniqueID',
+            'type': 'string'
+        },
+        'UnitsShown': {
+            'description': '(free text)',
+            'name': 'UnitsShown',
+            'type': 'string'
+        }
+    },
+    'type': 'object'
+}
+
+snapshots['SchemaTestCase::test_form_to_schema 2'] = {
+    'properties': {
         'Age': {
             'description': 'Age of the participant',
             'name': 'Age',
@@ -387,137 +518,6 @@ snapshots['SchemaTestCase::test_form_to_schema 1'] = {
             ],
             'description': '"If YES, how many?"',
             'name': 'Witness_times',
-            'type': 'string'
-        }
-    },
-    'type': 'object'
-}
-
-snapshots['SchemaTestCase::test_form_to_schema 2'] = {
-    'properties': {
-        'Breathing': {
-            'description': 'Participant Initialed in the "Rescue Breathing" box',
-            'name': 'Breathing',
-            'type': 'boolean'
-        },
-        'Call911': {
-            'description': 'Participant Initialed in the "911 Calls & Working with EMTS" box',
-            'name': 'Call911',
-            'type': 'boolean'
-        },
-        'DOB_Day': {
-            'description': 'Day of the month the pariticpant was born.',
-            'name': 'DOB_Day',
-            'type': 'string'
-        },
-        'DOB_Month': {
-            'description': 'Month the participant was born.',
-            'name': 'DOB_Month',
-            'type': 'string'
-        },
-        'DOB_Year': {
-            'description': 'Year the participant was born.',
-            'name': 'DOB_Year',
-            'type': 'string'
-        },
-        'Date_Day': {
-            'description': 'Day of the month the form was signed',
-            'name': 'Date_Day',
-            'type': 'string'
-        },
-        'Date_Month': {
-            'description': 'Month the form was signed',
-            'name': 'Date_Month',
-            'type': 'string'
-        },
-        'Date_Year': {
-            'description': 'Year the form was signed',
-            'name': 'Date_Year',
-            'type': 'string'
-        },
-        'ExpDate': {
-            'description': '(free text)',
-            'name': 'ExpDate',
-            'type': 'string'
-        },
-        'LotNum': {
-            'description': '(free text)',
-            'name': 'LotNum',
-            'type': 'string'
-        },
-        'Medication': {
-            'choices': [
-                'SHP',
-                'SEP',
-                'CM',
-                'WN',
-                'WCC',
-                'Drop In',
-                'Testing',
-                'External (provider/parent/community)'
-            ],
-            'description': '"What program\'s medication was used for training if applicable?"',
-            'name': 'Medication',
-            'type': 'string'
-        },
-        'Naloxone': {
-            'description': 'Participant Initialed in the "Naloxone" box',
-            'name': 'Naloxone',
-            'type': 'boolean'
-        },
-        'Name': {
-            'description': "Participant's name (free text)",
-            'name': 'Name',
-            'type': 'string'
-        },
-        'Risk': {
-            'description': 'Participant Initialed in the "Overdose Risk Factors" box',
-            'name': 'Risk',
-            'type': 'boolean'
-        },
-        'Safety': {
-            'description': 'Participant Initialed in the "Rescue Safety" box',
-            'name': 'Safety',
-            'type': 'boolean'
-        },
-        'Signature': {
-            'description': 'The participant signed the form giving Prevention Point Philadelphia permission to verify that the participant has completed Opiate Overdose Prevention Training',
-            'name': 'Signature',
-            'type': 'boolean'
-        },
-        'Staff': {
-            'description': 'Staff memember who lead the training (free text)',
-            'name': 'Staff',
-            'type': 'string'
-        },
-        'Symptoms': {
-            'description': 'Participant Initialed in the "Overdose Symptoms Recognition" box',
-            'name': 'Symptoms',
-            'type': 'boolean'
-        },
-        'Trained': {
-            'choices': [
-                'SHP',
-                'SEP',
-                'CM',
-                'WN',
-                'WCC',
-                'Drop In',
-                'Testing',
-                'External (provider/parent/community)'
-            ],
-            'description': '"What program did the person who trained you come from?"',
-            'name': 'Trained',
-            'type': 'string'
-        },
-        'UniqueID': {
-            'description': 'Unique ID of the participant ',
-            'name': 'UniqueID',
-            'type': 'string'
-        },
-        'UnitsShown': {
-            'description': '(free text)',
-            'name': 'UnitsShown',
             'type': 'string'
         }
     },
