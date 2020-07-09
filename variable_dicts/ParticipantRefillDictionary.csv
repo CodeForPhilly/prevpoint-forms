@@ -1,0 +1,76 @@
+﻿Var Name,Description,Options
+Date_month,Month the training was performed.,Free Text
+Date_day,Day of the month the training was performed.,Free Text
+Date_year,Year the training was performed.,Free Text
+Name,Name of participant,Free Text
+IsStaff,"""Check if you are a staff member""","""0"" if unchecked, ""1"" if checked"
+UniqueID,Unique ID of the participant,Free Text
+SEP,Last 4 digits of the participant's social security,Free Text
+DOB_month,Month the participant was born.,Free Text
+DOB_day,Day of the month the pariticpant was born.,Free Text
+DOB_year,Year the participant was born.,Free Text
+Age,Age of the participant,Free Text
+Gender,Gender of the participant,Free Text
+Race,Race of the participant ,Free Text
+Zipcode,Zipcode of participant,Free Text
+Received_ppp,"""How many times have you received Naloxone"": ""at PPP?""",Free Text
+Received_pharmacy,"""How many times have you received Naloxone"": ""at a pharmacy?""",Free Text
+Insurance_yes,"""Do you you currently have insurance?"": ""Yes"" checked","""0"" if unchecked, ""1"" if checked"
+Insurance_no,"""Do you you currently have insurance?"": ""No"" checked","""0"" if unchecked, ""1"" if checked"
+Reason_used,"""Why do you need refill today? Naloxone was . . ."" : ""Used up"" checked","""0"" if unchecked, ""1"" if checked"
+Reason_stolen,"""Why do you need refill today? Naloxone was . . ."" : ""Stolen"" checked","""0"" if unchecked, ""1"" if checked"
+Reason_lost,"""Why do you need refill today? Naloxone was . . ."" : ""Lost"" checked","""0"" if unchecked, ""1"" if checked"
+Reason_other,"""Why do you need refill today? Naloxone was . . ."" : ""Other"" checked","""0"" if unchecked, ""1"" if checked"
+Reason_other_text,"""Why do you need refill today? Naloxone was . . ."" : Other explanatory text",Free Text
+Last_less,"""When did you pick up Naloxone the last time?"": ""< 1 month"" checked","""0"" if unchecked, ""1"" if checked"
+Last_3month,"""When did you pick up Naloxone the last time?"": ""1-3 months"" checked","""0"" if unchecked, ""1"" if checked"
+Last_6month,"""When did you pick up Naloxone the last time?"": ""3-6 months"" checked","""0"" if unchecked, ""1"" if checked"
+Last_more,"""When did you pick up Naloxone the last time?"": ""> 6 months"" checked","""0"" if unchecked, ""1"" if checked"
+Overdose_less,"""How many overdoses have you seen?"" : ""< 5"" checked","""0"" if unchecked, ""1"" if checked"
+Overdose_10,"""How many overdoses have you seen?"" : ""5 -10"" checked","""0"" if unchecked, ""1"" if checked"
+Overdose_15,"""How many overdoses have you seen?"" : ""11-15"" checked","""0"" if unchecked, ""1"" if checked"
+Overdose_20,"""How many overdoses have you seen?"" : ""16-20"" checked","""0"" if unchecked, ""1"" if checked"
+Overdose_more,"""How many overdoses have you seen?"" : ""21+"" checked","""0"" if unchecked, ""1"" if checked"
+Overdose_more_text,"""How many overdoses have you seen?"" : ""21+ (how many)"" ",Free Text
+Success,"""How many people did you successfully revive with Naloxone?""",Free Text
+Category_using,"""Which category best descirbes you?"" : ""Person who uses drugs"" checked","""0"" if unchecked, ""1"" if checked"
+Category_recovered,"""Which category best descirbes you?"" : ""Person in recovery"" checked","""0"" if unchecked, ""1"" if checked"
+Category_other,"""Which category best descirbes you?"" : ""Other"" checked","""0"" if unchecked, ""1"" if checked"
+Category_other_text,"""Which category best descirbes you?"" : ""Other"" explanatory text",Free Text
+Staff,Staff signature present,"""0"" if not present, ""1"" if present"
+Staff_date,Date of staff signature,Free Text
+Administered_never,"""When was the last time you administered Naloxone to a person?"": ""Never"" checked","""0"" if unchecked, ""1"" if checked"
+Administered_less,"""When was the last time you administered Naloxone to a person?"": ""< 1 week"" checked","""0"" if unchecked, ""1"" if checked"
+Administered_1month,"""When was the last time you administered Naloxone to a person?"": ""1 week to 1 month"" checked","""0"" if unchecked, ""1"" if checked"
+Administered_3month,"""When was the last time you administered Naloxone to a person?"": ""1-3 months"" checked","""0"" if unchecked, ""1"" if checked"
+Administered_more,"""When was the last time you administered Naloxone to a person?"": ""> 3 months"" checked","""0"" if unchecked, ""1"" if checked"
+Whom_friend,"""On whom did you last use Nalozone (check one)?"": ""Friend"" checked","""0"" if unchecked, ""1"" if checked"
+Whom_family,"""On whom did you last use Nalozone (check one)?"": ""Family"" checked","""0"" if unchecked, ""1"" if checked"
+Whom_acquaintance,"""On whom did you last use Nalozone (check one)?"": ""Friend"" checked","""0"" if unchecked, ""1"" if checked"
+Whom_stranger,"""On whom did you last use Nalozone (check one)?"": ""Stranger"" checked","""0"" if unchecked, ""1"" if checked"
+Call_yes,"""Did you or someone else call 911?"": ""Yes"" checked","""0"" if unchecked, ""1"" if checked"
+Call_no,"""Did you or someone else call 911?"": ""No"" checked","""0"" if unchecked, ""1"" if checked"
+Call_dk,"""Did you or someone else call 911?"": ""Don't Know"" checked","""0"" if unchecked, ""1"" if checked"
+Why_police,"""Did you or someone else call 911?"" ""IF YOU ANSWERED NO, why?"": ""Afraid of police involvement"" checked","""0"" if unchecked, ""1"" if checked"
+Why_revived,"""Did you or someone else call 911?"" ""IF YOU ANSWERED NO, why?"": ""Person was revived"" checked","""0"" if unchecked, ""1"" if checked"
+Why_other,"""Did you or someone else call 911?"" ""IF YOU ANSWERED NO, why?"": ""Other"" checked","""0"" if unchecked, ""1"" if checked"
+Why_other_text,"""Did you or someone else call 911?"" ""IF YOU ANSWERED NO, why?"": ""Other"" explanatory text",Free Text
+Rescue_yes,"""Did you use rescue breathing?"": ""Yes"" checked","""0"" if unchecked, ""1"" if checked"
+Rescue_no,"""Did you use rescue breathing?"": ""No"" checked","""0"" if unchecked, ""1"" if checked"
+Recognize_breathe,"""How did you recognize the overdose?"": ""Person could not breathe/slowed breathing"" checked","""0"" if unchecked, ""1"" if checked"
+Recognize_unrespon,"""How did you recognize the overdose?"": ""Unresponsive or unconscious"" checked","""0"" if unchecked, ""1"" if checked"
+Recognize_blue,"""How did you recognize the overdose?"": ""Became blue/ purple"" checked","""0"" if unchecked, ""1"" if checked"
+Recognize_needle,"""How did you recognize the overdose?"": ""Needle/drugs present at scene"" checked","""0"" if unchecked, ""1"" if checked"
+Recognize_all,"""How did you recognize the overdose?"": ""All of the above"" checked","""0"" if unchecked, ""1"" if checked"
+Form_inject,"""What form of naloxone did you use?"": ""Injectable (into the muscle)"" checked","""0"" if unchecked, ""1"" if checked"
+Form_nasal,"""What form of naloxone did you use?"": ""Intranasal (into the nose)"" checked","""0"" if unchecked, ""1"" if checked"
+Place_street,"""Where did the overdose incident take place?"": ""Street/Outdoors"" checked","""0"" if unchecked, ""1"" if checked"
+Place_business,"""Where did the overdose incident take place?"": ""Business"" checked","""0"" if unchecked, ""1"" if checked"
+Place_home,"""Where did the overdose incident take place?"": ""Home/residence"" checked","""0"" if unchecked, ""1"" if checked"
+Place_park,"""Where did the overdose incident take place?"": ""Park/neighborhood"" checked","""0"" if unchecked, ""1"" if checked"
+Place_zip,"""Where did the overdose incident take place?"":  ""ZIP Code""",Free Text
+Event_died,"""What was the last event you saw during the OD?"" : ""Person died"" checked","""0"" if unchecked, ""1"" if checked"
+Event_walked,"""What was the last event you saw during the OD?"" : ""Person walked away"" checked","""0"" if unchecked, ""1"" if checked"
+Event_EMS,"""What was the last event you saw during the OD?"" : ""EMS arrived/transpoted person"" checked","""0"" if unchecked, ""1"" if checked"
+Event_transport,"""What was the last event you saw during the OD?"" : ""Person transported by other"" checked","""0"" if unchecked, ""1"" if checked"
+Event_Death,"""What was the last event you saw during the OD?"" : ""Death"" checked","""0"" if unchecked, ""1"" if checked"

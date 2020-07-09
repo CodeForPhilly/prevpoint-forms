@@ -1,0 +1,58 @@
+Var Name	Description	Options
+Date_month	Month the training was performed.	Free Text
+Date_day	Day of the month the training was performed.	Free Text
+Date_year	Year the training was performed.	Free Text
+Name	Name of participant	Free Text
+DOB_month	Month the participant was born.	Free Text
+DOB_date	Day of the month the pariticpant was born.	Free Text
+DOB_year	Year the participant was born.	Free Text
+UniqueID	Unique ID of the participant	Free Text
+Race_latino	"What Race do you identify as?(check all that apply): ""Latino/Hispanic"" checked"	"""0"" if unchecked, ""1"" if checked"
+Race_native	"What Race do you identify as?(check all that apply): ""Native American"" checked"	"""0"" if unchecked, ""1"" if checked"
+Race_white	"What Race do you identify as?(check all that apply): ""White/Caucasian"" checked"	"""0"" if unchecked, ""1"" if checked"
+Race_biracial	"What Race do you identify as?(check all that apply): ""2 or More Races"" checked"	"""0"" if unchecked, ""1"" if checked"
+Race_black	"What Race do you identify as?(check all that apply): ""African American/Black"" checked"	"""0"" if unchecked, ""1"" if checked"
+Race_asian	"What Race do you identify as?(check all that apply): ""Asian"" checked"	"""0"" if unchecked, ""1"" if checked"
+Race_other	"What Race do you identify as?(check all that apply): ""Other"" checked"	"""0"" if unchecked, ""1"" if checked"
+Race_other_text	"What Race do you identify as?(check all that apply): free text clarifying ""Other"""	Free Text
+Gender_male	"What Gender do you identify as?: ""Male"" checked"	"""0"" if unchecked, ""1"" if checked"
+Gender_female	"What Gender do you identify as?: ""Female"" checked"	"""0"" if unchecked, ""1"" if checked"
+Gender_mtf	"What Gender do you identify as?: ""Male to Female"" checked"	"""0"" if unchecked, ""1"" if checked"
+Gender_ftm	"What Gender do you identify as?: ""Female to Male"" checked"	"""0"" if unchecked, ""1"" if checked"
+Gender_queer	"What Gender do you identify as?: ""Gender Queer"" checked"	"""0"" if unchecked, ""1"" if checked"
+Trainer	Name of the trainer	Free Text
+Address	Address where training is being held	Free Text
+Agency	Agency/ company name of the participant	Free Text
+Occupation	Occupation of the participant	Free Text
+Zipcode	Zip code the participants lives in or spends the most time in	Free Text
+Cat_parent	"Which category best describes you?: ""Parent of someone at risk for overdose"" checked"	"""0"" if unchecked, ""1"" if checked"
+Cat_partner	"Which category best describes you?: ""Partner of someone at risk for overdose"" checked"	"""0"" if unchecked, ""1"" if checked"
+Cat_friend	"Which category best describes you?: ""Friend of someone at risk for overdose"" checked"	"""0"" if unchecked, ""1"" if checked"
+Cat_provider	"Which category best describes you?: ""Provider at the agency"" checked"	"""0"" if unchecked, ""1"" if checked"
+Cat_other	"Which category best describes you?: ""Other"" checked"	"""0"" if unchecked, ""1"" if checked"
+Cat_other_text	"Which category best describes you?: Text clarifying ""Other"""	Free Text
+Who_self	"Who are you getting Naloxone (Narcan) for today?: ""Self"" checked"	"""0"" if unchecked, ""1"" if checked"
+Who_friend	"Who are you getting Naloxone (Narcan) for today?: ""Friend"" checked"	"""0"" if unchecked, ""1"" if checked"
+Who_family	"Who are you getting Naloxone (Narcan) for today?: ""Family member"" checked"	"""0"" if unchecked, ""1"" if checked"
+Who_client	"Who are you getting Naloxone (Narcan) for today?: ""Client"" checked"	"""0"" if unchecked, ""1"" if checked"
+Who_just	"Who are you getting Naloxone (Narcan) for today?: ""Just to carry"" checked"	"""0"" if unchecked, ""1"" if checked"
+Carrying_yes	"Are you carrying Naloxone (Narcan) today?: ""YES"" checked"	"""0"" if unchecked, ""1"" if checked"
+Carrying_no	"Are you carrying Naloxone (Narcan) today?: ""NO"" checked"	"""0"" if unchecked, ""1"" if checked"
+Refill_yes	"Do you need a refill [of Naloxone]?: ""YES"" checked"	"""0"" if unchecked, ""1"" if checked"
+Refill_no	"Do you need a refill [of Naloxone]?: ""NO"" checked"	"""0"" if unchecked, ""1"" if checked"
+Received_pharmacy	"If you do have Nalozone (Narcan) where did you receive it?: ""Pharmacy"" checked"	"""0"" if unchecked, ""1"" if checked"
+Received_doctor	"If you do have Nalozone (Narcan) where did you receive it?: ""Doctor"" checked"	"""0"" if unchecked, ""1"" if checked"
+Received_work	"If you do have Nalozone (Narcan) where did you receive it?: ""Work"" checked"	"""0"" if unchecked, ""1"" if checked"
+Received_ppp	"If you do have Nalozone (Narcan) where did you receive it?: ""PPP"" checked"	"""0"" if unchecked, ""1"" if checked"
+Witness_yes	"Have you ever witnessed a drug overdose?: ""YES"" checked"	"""0"" if unchecked, ""1"" if checked"
+Witness_no	"Have you ever witnessed a drug overdose?: ""NO"" checked"	"""0"" if unchecked, ""1"" if checked"
+Witness_times	Have you ever witnessed a drug overdose?: # of times	Free Text
+Witness_911	"Have you ever witnessed a drug overdose?: Of those times, how many times was 911 called?"	Free Text
+Witness_hospital	"Have you ever witnessed a drug overdose?: Of those times, how many times was the person taken to the hospital?"	Free Text
+Witness_fatal	"Have you ever witnessed a drug overdose?: Of those times, how many fatalities were there?"	Free Text
+Witness_recent	When was the last time that you witnessed an overdose? 	Free Text
+Reversed_yes	"Have you ever reversed someone else with Naloxone (Narcan)? ""YES"" checked"	"""0"" if unchecked, ""1"" if checked"
+Reversed_no	"Have you ever reversed someone else with Naloxone (Narcan)? ""NO"" checked"	"""0"" if unchecked, ""1"" if checked"
+Reversed_suvived	"If you reversed someone with Naloxone (Narcan), what was the outcome of the overdose reversal?: ""Person survived"" checked"	"""0"" if unchecked, ""1"" if checked"
+Reversed_passed	"If you reversed someone with Naloxone (Narcan), what was the outcome of the overdose reversal?: ""Person passed away"" checked"	"""0"" if unchecked, ""1"" if checked"
+Reversed_hospital	"If you reversed someone with Naloxone (Narcan), what was the outcome of the overdose reversal?: ""Person went to the hospital"" checked"	"""0"" if unchecked, ""1"" if checked"

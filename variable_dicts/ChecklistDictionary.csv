@@ -1,8 +1,8 @@
 ﻿Var Name,Description,Options
-Name,Participant's name (free text),
-DOB_Month,Month the participant was born.,
-DOB_Day,Day of the month the pariticpant was born.,
-DOB_Year,Year the participant was born.,
+Name,Participant's name ,Free Text
+DOB_month,Month the participant was born.,Free Text
+DOB_day,Day of the month the pariticpant was born.,Free Text
+DOB_year,Year the participant was born.,
 UniqueID,Unique ID of the participant ,
 Risk,"Participant Initialed in the ""Overdose Risk Factors"" box","""0"" if there are no marks in the box, ""1"" if marks are present"
 Symptoms,"Participant Initialed in the ""Overdose Symptoms Recognition"" box","""0"" if there are no marks in the box, ""1"" if marks are present"

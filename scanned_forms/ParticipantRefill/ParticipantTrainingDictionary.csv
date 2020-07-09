@@ -16,7 +16,7 @@ Carrying,"""Are you carrying Naloxone Today?""","""Yes"","" No"""
 Insurance,"""Do you currently have insurance?"" ","""Yes"", ""No"""
 Overdose,"""Have you ever overdosed before?""","""Yes"", ""No"""
 OD_times,"If yes to Overdose: ""How many times?""",Free Text
-OD_recent,"if yes to Overdose: ""When was your most recent overdose?"" (free text)",
+OD_recent,"if yes to Overdose: ""When was your most recent overdose?""",Free Text
 OD_outcome_EMS,"if yes to Overdose: ""What was the outcome of the OD? (Check all that apply)"". ""EMS"" checked","""0"" if unchecked, ""1"" if checked"
 OD_outcome_Police,"if yes to Overdose: ""What was the outcome of the OD? (Check all that apply)"". ""Police arrived at the scene"" checked","""0"" if unchecked, ""1"" if checked"
 OD_outcome_ER,"if yes to Overdose: ""What was the outcome of the OD? (Check all that apply)"". ""Emergency Room and/or Hospitalization"" checked","""0"" if unchecked, ""1"" if checked"
