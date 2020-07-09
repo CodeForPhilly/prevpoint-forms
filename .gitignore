@@ -6,3 +6,4 @@
 server/local_settings.py
 __pycache__
 .venv
+db.sqlite3

@@ -59,7 +59,7 @@ form_map = {}
 
 for fname in form_list:
     title = slug = fname.rstrip('.csv')
-    title = title.rstrip('Dictionary')
+    title = title.replace('Dictionary','')
     entry = {}
     for i, letter in list(enumerate(slug))[::-1]:
         if letter != letter.lower():

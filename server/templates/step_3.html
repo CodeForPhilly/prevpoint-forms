@@ -1,0 +1,26 @@
+{% block "content" %}
+<p>
+  This form is being processed. You should be redirected in a minute or so.
+</p>
+<p>Time spent waiting: <span id="wait"></span> seconds
+<script>
+  const next = "{{next}}"
+  let count = 0
+  const interval = setInterval(() => {
+    fetch('/check_3/{{id}}/')
+      .then(r => r.json())
+      .then(({status}) => {
+        if (status === 'needs_verify') {
+           window.location = next
+        } else if (status === 'verified') {
+           window.location = '/5/'
+        } else if (status === 'error') {
+          clearInterval(interval)
+          alert("An unknown error has occurred. The staff has been notified and will finish processing this form.")
+        } else {
+          document.getElementById("wait").innerHTML= count ++
+        }
+      })
+  }, 1000)
+</script>
+{% endblock %}
