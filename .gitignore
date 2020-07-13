@@ -1,3 +1,16 @@
 # untracked files
   GoogleDrive/*
   notebooks/keys.py
+
+# python/django specific
+server/local_settings.py
+__pycache__
+.venv
+db.sqlite3
+server/settings/.secret_key
+server/settings/local.py
+
+# node specific
+node_modules
+dist
+.cache

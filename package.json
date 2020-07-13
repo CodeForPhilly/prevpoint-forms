@@ -1,0 +1,38 @@
+{
+  "name": "prevpoint-forms",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:CodeForPhilly/prevpoint-forms.git",
+  "author": "chriscauley <chris@lablackey.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf build; parcel build client/index.html -d build --public-url /static/",
+    "develop": "parcel client/index.html -p 8404 --public-url /static/ --no-hmr",
+    "lint": "yarn eslint client"
+  },
+  "dependencies": {
+    "@babel/core": "^7.0.0-0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.10.4",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "object-hash": "^2.0.3",
+    "parcel": "^1.12.4",
+    "react": ">=16.0.0",
+    "react-dom": ">=16.0.0",
+    "react-jsonschema-form": "^2.0.0-alpha.1",
+    "react-router-dom": "^5.1.2",
+    "use-global-hook": "^0.1.12"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.19.0",
+    "jest": "^26.1.0",
+    "prettier": "^2.0.5",
+    "sass": "^1.26.3"
+  }
+}

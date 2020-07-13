@@ -30,3 +30,24 @@ For each of the forms bounding boxes need to be created around text fields and m
 
 The client (Prevention Point) has flagged "Name" and "UniqueID" as the fields that need the most accurate information. The Microsoft Azure Read API returns a certainty number. If the certainty number is below a certain threshold. The software should display the form and a field that allows for manual entry and correction. 
 
+# Installation
+
+Before installing you must install python3, python-virtualenv, node, and yarn. If you have trouble installing these, feel free to reach out to @chriscauley on the slack.
+
+```
+# install packages, this will need to be re-run if requirements.txt or package.json is changed
+./bin/install
+
+# create a superuser for viewing data in admin (follow prompts)
+python manage.py createsuperuser
+```
+
+# Usage and Development
+
+Start the server
+
+```
+./bin/develop
+```
+
+This will start the django server and the node compiler in the same terminal. Navigate to http://localhost:8000 and select form type. Upload an image. Currently the image processing isn't hooked up, so step 3 (processing) is skipped and a blank form is shown.

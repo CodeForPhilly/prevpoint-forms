@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block "content" %}
+<form method="POST" enctype="multipart/form-data">
+  {% for error in form.non_field_errors %}
+  <div class="alert alert-danger">{{ error }}</div>
+  {% endfor %}
+  {% for field in form.hidden_fields %}{{ field }}{% endfor %}
+  {% for field in form.visible_fields %}
+  <div class="form-group {% if field.errors %}has-error{% endif %}">
+    {% if not field.field.widget.attrs.placeholder %}{{ field.label_tag }}{% endif %}
+    {{ field }}
+    {% for error in field.errors %}
+    <div class="alert alert-danger">{{ error }}</div>
+    {% endfor %}
+    <div class="form-text text-muted">
+      {% if field.help_text %}
+      {{ field.help_text|safe }}
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+  {{ form.media }}
+  {% csrf_token %}
+  <input type="submit"/>
+</form>
+{% endblock %}
