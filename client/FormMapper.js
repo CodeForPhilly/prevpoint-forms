@@ -163,55 +163,57 @@ export default class FormMapper extends React.Component {
     const { width, height, entries, copied, error } = this.state
     this.draw()
     return (
-      <div className="relative">
-        <img
-          src={`/blank_form/${img_name}`}
-          className="max-w-none"
-          onLoad={this.imgLoad}
-          ref={this.imgRef}
-        />
-        <canvas
-          className="absolute top-0 left-0 bottom-0 right-0"
-          onMouseDown={this.onMouseDown}
-          onMouseMove={this.onMouseMove}
-          onMouseUp={this.onMouseUp}
-          ref={this.canvasRef}
-          height={height}
-          width={width}
-        />
-        <div className="fixed bottom-0 right-0 bg-white p-4 border">
-          {entries.length > 0 ? (
-            <div>
-              <div
-                style={{ maxHeight: 200, overflowY: 'auto' }}
-                ref={this.scrollRef}
-              >
-                {entries.map((entry, i) => (
-                  <EntryBox
-                    key={i}
-                    entry={entry}
-                    onChange={this.changeEntry(i)}
-                    onDelete={this.deleteEntry(i)}
-                    placeholder={`Item #${i + 1}`}
-                  />
-                ))}
+      <div className="fixed left-0 bottom-0 right-0" style={{ top: 77 }}>
+        <div className="relative max-w-full max-h-full overflow-scroll pb-32">
+          <img
+            src={`/blank_form/${img_name}`}
+            className="max-w-none"
+            onLoad={this.imgLoad}
+            ref={this.imgRef}
+          />
+          <canvas
+            className="absolute top-0 left-0 bottom-0 right-0"
+            onMouseDown={this.onMouseDown}
+            onMouseMove={this.onMouseMove}
+            onMouseUp={this.onMouseUp}
+            ref={this.canvasRef}
+            height={height}
+            width={width}
+          />
+          <div className="fixed bottom-0 right-0 bg-white p-4 border">
+            {entries.length > 0 ? (
+              <div>
+                <div
+                  style={{ maxHeight: 200, overflowY: 'auto' }}
+                  ref={this.scrollRef}
+                >
+                  {entries.map((entry, i) => (
+                    <EntryBox
+                      key={i}
+                      entry={entry}
+                      onChange={this.changeEntry(i)}
+                      onDelete={this.deleteEntry(i)}
+                      placeholder={`Item #${i + 1}`}
+                    />
+                  ))}
+                </div>
+                <div
+                  onClick={this.copy}
+                  className="cursor-pointer text-underline"
+                >
+                  {copied ? 'Copied!' : 'Copy To Clipboard'}
+                </div>
               </div>
-              <div
-                onClick={this.copy}
-                className="cursor-pointer text-underline"
-              >
-                {copied ? 'Copied!' : 'Copy To Clipboard'}
+            ) : (
+              <div>Click and drag anywhere to make a box.</div>
+            )}
+            {error && (
+              <div className="p-2 bg-red-200 text-red-600 mt-2">
+                <i className="fa fa-exclamation-circle mr-2" />
+                {error}
               </div>
-            </div>
-          ) : (
-            <div>Click and drag anywhere to make a box.</div>
-          )}
-          {error && (
-            <div className="p-2 bg-red-200 text-red-600 mt-2">
-              <i className="fa fa-exclamation-circle mr-2" />
-              {error}
-            </div>
-          )}
+            )}
+          </div>
         </div>
       </div>
     )
