@@ -1,0 +1,17 @@
+#! /usr/bin/env bash
+
+. .venv/bin/activate
+DJANGO='python manage.py runserver'
+YARN='yarn develop'
+
+if [[ $1 == "tmux" ]];then
+    # open dev servers in tmux session
+    tmux new-session -s prevpoint-forms   $DJANGO
+    tmux new-window  -t prevpoint-forms:1 $YARN
+else
+    # open both in the same terminal
+    trap "exit" INT TERM ERR
+    trap "kill 0" EXIT
+    $DJANGO &
+    $YARN
+fi
