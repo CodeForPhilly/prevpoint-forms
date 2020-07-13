@@ -1,12 +1,34 @@
-from django.http import HttpResponseRedirect, JsonResponse
+from django.conf import settings
+from django.http import HttpResponseRedirect, JsonResponse, HttpResponse
 from django.shortcuts import get_object_or_404
 from django.template.response import TemplateResponse
 from django.urls import reverse
+from django.views.decorators.csrf import ensure_csrf_cookie
+from django.views.static import serve
 
+import os
 from server.models import FormCompletion
 from server.forms import TypeForm, UploadForm
 from server.schema import form_map
 from server.schemulator import schema_to_form
+
+@ensure_csrf_cookie
+def single_page_app(request, *args, **kwargs):
+    path = 'dist/index.html'
+    response = serve(
+        request,
+        os.path.basename(path),
+        os.path.dirname(path)
+    )
+    return response
+
+def blank_form(request, image_name):
+    response = HttpResponse()
+    blank_dir = os.path.join(settings.BASE_DIR,'../scanned_forms/blank')
+    with open(os.path.join(blank_dir, image_name), 'rb') as f:
+        response.content = f.read()
+    response["Content-Disposition"] = "attachment; filename={0}".format(image_name)
+    return response
 
 def step_1(request):
     form = TypeForm(request.POST or None)
