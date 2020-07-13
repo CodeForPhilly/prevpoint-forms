@@ -1,0 +1,20 @@
+#! /usr/bin/env bash
+set -e
+
+# install node packages
+yarn install
+
+# create virtual environment
+if [[ ! -d .venv ]];
+then
+    python3 -m venv .venv
+fi
+
+# activate virtualenv
+source .venv/bin/activate
+
+# install packages
+pip install -r requirements.txt
+
+# create database and tables
+python manage.py migrate

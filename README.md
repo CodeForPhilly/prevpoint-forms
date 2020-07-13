@@ -32,20 +32,11 @@ The client (Prevention Point) has flagged "Name" and "UniqueID" as the fields th
 
 # Installation
 
-Before installing you must have python3 and python-virtualenv. If you have trouble installing these, feel free to reach out to @chriscauley on the slack.
+Before installing you must install python3, python-virtualenv, node, and yarn. If you have trouble installing these, feel free to reach out to @chriscauley on the slack.
 
 ```
-# create virtual environment
-python3 -m venv .venv
-
-# activate virtualenv
-source .venv/bin/activate
-
-# install packages
-pip install -r requirements.txt
-
-# create database and tables
-python manage.py migrate
+# install packages, this will need to be re-run if requirements.txt or package.json is changed
+./bin/install
 
 # create a superuser for viewing data in admin (follow prompts)
 python manage.py createsuperuser
@@ -56,12 +47,7 @@ python manage.py createsuperuser
 Start the server
 
 ```
-# activate virtualenv
-source .venv/bin/activate
-
-# start development server
-python manage.py runserver
-
+./bin/develop
 ```
 
-Navigate to http://localhost:8000 and select form type. Upload an image. Currently the image processing isn't hooked up, so step 3 (processing) is skipped and a blank form is shown.
+This will start the django server and the node compiler in the same terminal. Navigate to http://localhost:8000 and select form type. Upload an image. Currently the image processing isn't hooked up, so step 3 (processing) is skipped and a blank form is shown.
