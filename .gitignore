@@ -1,3 +1,4 @@
-Googledrive/
+/Googledrive/*
 src/ppoint/keys.py
 notebooks/keys.py
+
