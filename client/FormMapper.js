@@ -152,9 +152,11 @@ export default class FormMapper extends React.Component {
     this.setState({ entries })
   }
   copy = () => {
-    navigator.clipboard.writeText(
-      this.state.entries.map((e) => e.join(',')).join('\n'),
-    )
+    const lines = []
+    this.state.entries.forEach(([name, x, y, width, height]) => {
+      lines.push(`"${name}": ${JSON.stringify({ x, y, width, height })},\n`)
+    })
+    navigator.clipboard.writeText(`{\n${lines.join('')}}`)
     this.setState({ copied: true })
     setTimeout(() => this.setState({ copied: false }), 5000)
   }
